@@ -1,104 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
     <title>Versatile Operations</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="logo.png" alt="Versatile Operations"></a>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Founders</a></li>
-                    <li>
-                        <a href="#">Clothing</a>
-                        <ul>
-                            <li><a href="#">Hoodies</a></li>
-                            <li><a href="#">T-shirts</a></li>
-                            <li><a href="#">Pants</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Music/Fashion</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-black">
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Versatile Operations</h1>
-                <p>Discover the latest fashion trends and styles.</p>
-            </div>
-        </section>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#hoodies" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-hoodies w3-xxlarge"></i>
+    <p>HOODIES</p>
+  </a>
+  <a href="#tshirts" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-tshirt w3-xxlarge"></i>
+    <p>T-SHIRTS</p>
+  </a>
+  <a href="#pants" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-pants w3-xxlarge"></i>
+    <p>PANTS</p>
+  </a>
+  <a href="#music-fashion" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-music w3-xxlarge"></i>
+    <p>MUSIC/FASHION</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <div class="product-grid">
-                <!-- Product cards go here -->
-            </div>
-        </section>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#home" class="w3-bar-item w3-button" style="width:14.28% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:14.28% !important">ABOUT</a>
+    <a href="#hoodies" class="w3-bar-item w3-button" style="width:14.28% !important">HOODIES</a>
+    <a href="#tshirts" class="w3-bar-item w3-button" style="width:14.28% !important">T-SHIRTS</a>
+    <a href="#pants" class="w3-bar-item w3-button" style="width:14.28% !important">PANTS</a>
+    <a href="#music-fashion" class="w3-bar-item w3-button" style="width:14.28% !important">MUSIC/FASHION</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:14.28% !important">CONTACT</a>
+  </div>
+</div>
 
-        <section class="about-founders">
-            <h2>About the Founders</h2>
-            <div class="founder-info">
-                <!-- Founder information goes here -->
-            </div>
-        </section>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Versatile</span> Operations.</h1>
+    <p>Fashion Apparel Brand.</p>
+    <img src="https://www.w3schools.com/w3images/man_smoke.jpg" alt="Versatile Operations" class="w3-image" width="992" height="1108">
+  </header>
 
-        <section class="clothing-categories">
-            <h2>Clothing Categories</h2>
-            <div class="category-grid">
-                <a href="#" class="category-card">
-                    <img src="hoodies.jpg" alt="Hoodies">
-                    <h3>Hoodies</h3>
-                </a>
-                <a href="#" class="category-card">
-                    <img src="tshirts.jpg" alt="T-shirts">
-                    <h3>T-shirts</h3>
-                </a>
-                <a href="#" class="category-card">
-                    <img src="pants.jpg" alt="Pants">
-                    <h3>Pants</h3>
-                </a>
-            </div>
-        </section>
+  <!-- About Founders Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About the Founders</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Information about how the Versatile Operations apparel company got started and personal information about the 2 founders.</p>
+  </div>
 
-        <section class="music-fashion">
-            <h2>Music and Fashion</h2>
-            <div class="music-fashion-content">
-                <!-- Music and fashion content goes here -->
-            </div>
-        </section>
+  <!-- Hoodies Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="hoodies">
+    <h2 class="w3-text-light-grey">Hoodies</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>This section will display all the recent hoodies and then range from most popular hoodies to least.</p>
+  </div>
 
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+  <!-- T-shirts Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="tshirts">
+    <h2 class="w3-text-light-grey">T-shirts</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>This section will display all the recent T-shirts and then range from most popular T-shirts to least.</p>
+  </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+  <!-- Pants Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="pants">
+    <h2 class="w3-text-light-grey">Pants</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>This section will display all the recent pants and then range from most popular pants to least.</p>
+  </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+  <!-- Music/Fashion Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="music-fashion">
+    <h2 class="w3-text-light-grey">Music/Fashion</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>This fashion page will show different styles the apparel can be worn by models, and also music in the background while scrolling through the page.</p>
+  </div>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Versatile Operations. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+  <!-- Contact Section -->
+  <div
