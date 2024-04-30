@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.nav-links ul li:hover > ul {
+    display: block;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.featured-products,
+.about-founders,
+.clothing-categories,
+.music-fashion,
+.contact {
+    margin-top: 40px;
+}
+
+.product-grid,
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact form {
+    display: grid;
+    gap: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul ul {
+        position: static;
+        background-color: transparent;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+}
