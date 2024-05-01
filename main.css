@@ -1,40 +1,79 @@
-/* Style the header */
-header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+/* Font */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
 }
 
-/* Style the section headings */
-h2 {
-  color: #333;
-  font-size: 24px;
-  margin-top: 20px;
+/* Sidebar */
+.w3-sidebar {
+    width: 120px;
+    background: #222;
 }
 
-/* Style the paragraphs */
-p {
-  line-height: 1.6;
+/* Main content */
+#main {
+    margin-left: 120px;
 }
 
-/* Style the contact form inputs */
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  box-sizing: border-box;
+/* Responsive layout */
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0;
+    }
 }
 
-/* Style the submit button */
-button {
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 10px 20px;
-  border: 1px solid #333;
-  cursor: pointer;
+/* Navbar */
+.w3-top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
-button:hover {
-  background-color: #333;
-  color: #f9f9f9;
+/* Navbar links */
+.w3-bar-item {
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Navbar links on hover */
+.w3-bar-item:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Header */
+.w3-container {
+    padding: 32px;
+}
+
+/* Paragraphs */
+.w3-text-grey {
+    color: grey;
+}
+
+/* Horizontal Rule */
+hr.w3-opacity {
+    border-color: grey;
+    opacity: 0.5;
+}
+
+/* Image */
+.w3-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Padding for sections */
+.w3-padding-large {
+    padding: 64px 0;
 }
