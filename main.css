@@ -77,3 +77,14 @@ hr.w3-opacity {
 .w3-padding-large {
     padding: 64px 0;
 }
+
+footer {
+  background-color: #931420;
+  clear: both;
+  padding: 1em 0;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+}
