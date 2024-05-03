@@ -1,23 +1,23 @@
-body {
-    background-color: black;
+body, h1, h2, h3, h4, h5, h6, .cursive {
+    font-family: "Montserrat", cursive;
+    color: green;
 }
 
-.pink-section {
-    color: pink;
-}
-
-.nav-link {
+.navbar-nav .nav-link {
     font-family: cursive;
     color: green !important;
 }
 
-.navbar-brand img {
-    display: block;
-    margin: 0 auto;
+body {
+    background-color: lightcream;
 }
 
-.card {
-    margin: 0 auto;
-    width: 50%;
-    max-width: 300px;
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink-section {
+    background-color: #ffcccc; /* light red or dark pink */
 }
