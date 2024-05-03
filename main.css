@@ -1,90 +1,23 @@
-/* Font */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Montserrat", sans-serif;
+body, h1, h2, h3, h4, h5, h6, .cursive {
+    font-family: "Montserrat", cursive;
+    color: green;
 }
 
-/* Sidebar */
-.w3-sidebar {
-    width: 120px;
-    background: #222;
+.navbar-nav .nav-link {
+    font-family: cursive;
+    color: green !important;
 }
 
-/* Main content */
-#main {
-    margin-left: 120px;
+body {
+    background-color: lightcream;
 }
 
-/* Responsive layout */
-@media only screen and (max-width: 600px) {
-    #main {
-        margin-left: 0;
-    }
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Navbar */
-.w3-top {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
-/* Navbar links */
-.w3-bar-item {
-    padding: 16px;
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-/* Navbar links on hover */
-.w3-bar-item:hover {
-    background-color: #ccc;
-    color: black;
-}
-
-/* Header */
-.w3-container {
-    padding: 32px;
-}
-
-/* Paragraphs */
-.w3-text-grey {
-    color: grey;
-}
-
-/* Horizontal Rule */
-hr.w3-opacity {
-    border-color: Red;
-    opacity: 0.5;
-}
-
-/* Image */
-.w3-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Padding for sections */
-.w3-padding-large {
-    padding: 64px 0;
-}
-
-footer {
-  background-color: #931420;
-  clear: both;
-  padding: 1em 0;
-  color: white;
-}
-
-footer p {
-  text-align: center;
+.pink-section {
+    background-color: #ffcccc; /* light red or dark pink */
 }
